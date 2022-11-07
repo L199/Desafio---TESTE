@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+button {
+    cursor:  pointer;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navegacao CSS */
+
+.top-header{
+    width: 100%;
+    height: 20px;
+    background: black;
+}
+
+.th-login{
+    height: 20px;
+    background: grey;
+    color: white;
+    font-size: 0.8em;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 3px;
+}
+.th-login a{
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.main-header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+nav.mobile-menu{
+    margin-left:10px;
+    margin-right:10px;
+	cursor: pointer;
+	display: none;
+	width: 59px;
+	height: 40px;
+	background-image: url('../media/icon_menu.png');
+	background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+	opacity: 1;
+}
+
+nav.mobile-menu ul{
+    margin-top:70px;
+	opacity: 0;
+	transition: 1s;
+	background-color: red;
+	position: absolute;
+	width: 50%;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav.mobile-menu ul li{
+	padding:8px 0;
+	transition: 0.4s;
+	border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: rgb(230,230,230);
+}
+
+nav.mobile-menu ul li a{
+	color: black;
+	text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.logo{
+    height: 100%;
+    background-image: url('../media/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    display: flex;
+    width: 100%;
+    min-width: 180px;
+}
+
+.navbar {
+    width: 100%;
+    height: 40px;
+    background: red;
+}
+.nav{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.nav li {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search input[type=text] {
+    height: 30px;
+    width: 250px;
+    border: 1px solid grey;
+
+}
+.search button {
+    width: 80px;
+    height: 30px;
+    background: red;;
+    color: white;
+    border: 1px solid grey;
+    font-weight: 700;
+    margin-right:20px;
+}
+.lupa {
+    height: 80%;
+    background-image: url('../media/search.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    display: none;
+    width: 30%;
+    min-width: 80px;
+}
+/*Pagina Inicial CSS */
+
+.pagina{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    height: 350px;
+    background-color: #e2dedb;
+    padding: 15px 0px 0px 25px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    line-height: 25px;
+}
+
+.container-pagina{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa{
+    height: 100%;
+    min-height: 80px;
+    background-color: #acacac;
+}
+.bem-vindo{
+    height: 100%;
+    font-size: 12px;
+}
+.bem-vindo h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: red;
+    height: 150px;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* Catalogo CSS */
+
+.container-calcados {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.breadcrumbs {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumbs a:active {
+    color:black;
+}
+
+.container-principal{
+    margin-top: 10px;
+    height: 100%;
+    display: flex;
+}
+
+.filtro {
+    width: 250px;
+     padding: 10px;
+     border: solid 1px rgba(232, 232, 232, 1);
+     height: 350px;
+     margin-right: 15px;
+}
+
+.filtro ul {
+    display: block;
+    justify-content: space-between;
+    width: 80%;
+}
+.filtro li {
+    list-style: none;
+}
+.filtro a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container-cor{
+    display: flex;
+}
+
+.cor1 {
+    width: 50px;
+    height: 25px;
+    background:#cc0d1f ;
+    margin-right: 3px;
+}
+.cor2 {
+    width: 50px;
+    height: 25px;
+    background:#f36324 ;
+    margin-right: 3px;
+}
+.cor3 {
+    width: 50px;
+    height: 25px;
+    background:#28a3aa ;
+    margin-right: 3px;
+}
+
+.container-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.box-cards{
+    padding-right: 10px;
+    width: 100%;
+}
+.box-cards h1{
+    color: red;
+    font-weight: normal;
+
+}
+
+
+
+.order-list {
+    border-top: solid 1px rgba(232, 232, 232, 1);
+    border-bottom: solid 1px rgba(232, 232, 232, 1);
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.grid, .grid-calcados, .grid-camisetas, .grid-calcas{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    margin-top: 10px;
+}
+
+.grid-calcados, .grid-camisetas, .grid-calcas {
+    width: 180px;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+
+	
+}
+
+@media only screen and (max-width: 960px) {
+   
+    
+  }
+
+@media screen and (max-width: 768px){
+    .navbar {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+   
+  
+   
+
+
+	
+}
+@media only screen and (max-width: 600px) {
+    .logo{
+        margin:0 auto;
+    }
+    .th-login {
+        text-align: center;
+    }
+    .sidebar {
+        display: none;
+    }
+    nav.mobile-menu{
+        display: block;
+    }
+   .navbar {
+    position: absolute;
+    margin-top: 140px;
+    width: 50%;
+    height: 200px;
+    display: none;
+   }
+   .search {
+    display: none;
+   }
+   .search input[type=text] {
+    display: none;
+   }
+   .search button {
+    visibility: hidden;
+   }
+   .lupa{
+    display: block
+   }
+   .container-principal{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+
+   }
+  
+   
+  }
+
+@media screen and (max-width: 320px){
+   
+
+	
+}
+
+
+
